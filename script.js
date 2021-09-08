@@ -27,6 +27,7 @@ function rollThousand(min = 1, max = 6) { //Roda 1000
     const grafico = document.getElementById("grafico")
 
 
+
     let count = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     for (let i = 0; i < 1000; i++) {
 
@@ -46,6 +47,7 @@ function rollThousand(min = 1, max = 6) { //Roda 1000
         barras.style.width = count[i] + "px";
         barras.style.height = 20 + "px";
         barras.style.backgroundColor = "lightblue";
+        barras.innerText = [i + 2] + ": " + count[i]
         grafico.appendChild(barras);
 
     }
